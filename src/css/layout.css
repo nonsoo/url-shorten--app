@@ -13,7 +13,7 @@
   /* Font Size */
   --fs-prmy: 1rem;
   --fs-sec: 1.25rem;
-  --fs-tri: 2.25rem;
+  --fs-tri: 3.25rem;
 
   /* font weights */
   --fw-prmy: 500;
@@ -66,4 +66,66 @@
   margin-top: 3rem;
   padding: 2rem;
   width: 100%;
+}
+
+.IntroCon {
+  margin-top: 6rem;
+  display: flex;
+  align-items: center;
+}
+
+.IntroImg {
+  width: 50%;
+  height: auto;
+}
+
+.introText {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.introText__Btn {
+  width: 30%;
+  align-self: flex-start;
+}
+
+.introText__Header {
+  font-size: var(--fs-tri);
+  font-weight: var(--fw-sec);
+  color: var(--fcol-sec);
+  line-height: 3.5rem;
+
+  width: 80%;
+}
+
+.introText__Descri {
+  font-size: var(--fs-sec);
+  width: 80%;
+}
+
+.midSection {
+  width: 100;
+  background-color: var(--col-Neu-grayVio);
+
+  border-radius: 10px;
+}
+
+.midSectionText__Header,
+.midSectionText__Descri {
+  text-align: center;
+}
+
+.midSectionText__Header {
+  font-size: var(--fs-tri);
+  font-weight: var(--fw-sec);
+  color: var(--fcol-sec);
+}
+
+.midSectionText__Descri {
+  margin: 0 auto;
+  margin-top: 2rem;
+  font-size: var(--fs-sec);
+  color: var(--fcol-prmy);
+  width: 70%;
 }
