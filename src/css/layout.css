@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Fonts */
+  --ff-prmy: "Poppins", sans-serif;
+
+  /* Font Size */
+  --fs-prmy: 1rem;
+  --fs-sec: 1.25rem;
+  --fs-tri: 2.25rem;
+
+  /* font weights */
+  --fw-prmy: 500;
+  --fw-sec: 700;
+
+  /* Colours */
+  --col-Prmy-mod: hsl(180, 66%, 49%);
+  --col-Prmy-dark: hsl(257, 27%, 26%);
+  --col-Sec-red: hsl(0, 87%, 67%);
+  --col-Neu-gray: hsl(0, 0%, 75%);
+  --col-Neu-grayVio: hsl(257, 7%, 63%);
+  --col-Neu-Dblue: hsl(255, 11%, 22%);
+  --col-Neu-DVio: hsl(260, 8%, 14%);
+
+  --background-col: #f9f9f9;
+
+  --background-col-sec: #ffffff;
+
+  /* Font Colours */
+  --fcol-prmy: #ffffff;
+  --fcol-sec: #000000;
+  --fcol-tri: #8b8b8b;
+
+  /* other */
+
+  --boxShadow-prmy: 0 3px 6px 1px rgba(23, 23, 23, 0.06);
+  --lineHeight: 1.75rem;
+}
+
+.shortly--site {
+  width: 100%;
+
+  font-size: var(--fs-prmy);
+  font-family: var(--ff-prmy);
+  font-weight: var(--fw-prmy);
+  line-height: var(--lineHeight);
+
+  color: var(--fcol-tri);
+  background-color: var(--background-col);
+}
+
+.hide {
+  display: none;
+}
+
+.mainContent {
+  max-width: 1440px;
+  min-width: 375px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 3rem;
+  width: 100%;
+}
