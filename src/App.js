@@ -1,9 +1,14 @@
-import "./App.css";
+import "./css/layout.css";
+import "./css/comp.css";
+
+import Nav from "./Components/Nav";
 
 function App() {
   return (
     <div className="shortly--site">
-      <p>hello world</p>
+      <section className="Header mainContent">
+        <Nav />
+      </section>
     </div>
   );
 }

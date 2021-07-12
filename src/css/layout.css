@@ -52,7 +52,7 @@
   line-height: var(--lineHeight);
 
   color: var(--fcol-tri);
-  background-color: var(--background-col);
+  background-color: var(--background-col-sec);
 }
 
 .hide {
@@ -64,6 +64,6 @@
   min-width: 375px;
   margin: 0 auto;
   margin-top: 3rem;
-  padding: 3rem;
+  padding: 2rem;
   width: 100%;
 }
