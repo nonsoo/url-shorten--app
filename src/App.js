@@ -4,8 +4,12 @@ import "./css/comp.css";
 import Nav from "./Components/Nav";
 import Btn from "./Components/Interactive/Btn";
 import ShortenUrlComp from "./Components/Interactive/ShortenUrlComp";
+import Feature from "./Components/Features";
 
 import HeaderImg from "./imgs/illustration-working.svg";
+import RecognitionImg from "./imgs/icon-brand-recognition.svg";
+import DetailedImg from "./imgs/icon-detailed-records.svg";
+import CustomizeImg from "./imgs/icon-fully-customizable.svg";
 
 function App() {
   return (
@@ -35,6 +39,24 @@ function App() {
             Track how your links are performing across the web with our advanced
             statistics algorithm.
           </p>
+        </div>
+
+        <div className="FeaturesCon">
+          <Feature
+            featureName="Brand Recognition"
+            featureDescri="Boost your brand recognition with each click. Generic links don't mean a thing. Brand links help instill confidence in your product."
+            featureImg={RecognitionImg}
+          />
+          <Feature
+            featureName="Detailed Records"
+            featureDescri="Gain insights to who is clicking your links. Knowing when and where people engage with your content helps inform better decisions."
+            featureImg={DetailedImg}
+          />
+          <Feature
+            featureName="Fully Customizable"
+            featureDescri="Improve brand awareness and content discoverability through custom links supercharging customer engagement."
+            featureImg={CustomizeImg}
+          />
         </div>
       </section>
     </div>

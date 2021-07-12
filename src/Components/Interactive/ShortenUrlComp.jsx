@@ -2,10 +2,16 @@ import React from "react";
 
 const ShortenUrlComp = () => {
   return (
-    <form className="ShortenForm">
-      <input type="text" className="ShortenForm__Input" />
-      <input type="submit" className="ShortenForm__btn" value="Shorten!" />
-    </form>
+    <section className="ShortenCompCon">
+      <form className="ShortenForm">
+        <input
+          type="text"
+          className="ShortenForm__Input"
+          placeholder="Shorten a link here..."
+        />
+        <input type="button" className="ShortenForm__btn" value="Shorten it!" />
+      </form>
+    </section>
   );
 };
 

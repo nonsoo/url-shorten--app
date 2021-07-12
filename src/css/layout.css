@@ -111,6 +111,10 @@
   border-radius: 10px;
 }
 
+.midSectionText {
+  margin-top: 4rem;
+}
+
 .midSectionText__Header,
 .midSectionText__Descri {
   text-align: center;
@@ -128,4 +132,10 @@
   font-size: var(--fs-sec);
   color: var(--fcol-prmy);
   width: 70%;
+}
+
+.FeaturesCon {
+  display: flex;
+  gap: 2rem;
+  margin-top: 4rem;
 }
