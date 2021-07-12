@@ -5,6 +5,7 @@ import Nav from "./Components/Nav";
 import Btn from "./Components/Interactive/Btn";
 import ShortenUrlComp from "./Components/Interactive/ShortenUrlComp";
 import Feature from "./Components/Features";
+import ShortLinks from "./Components/Interactive/ShortLinks";
 
 import HeaderImg from "./imgs/illustration-working.svg";
 import RecognitionImg from "./imgs/icon-brand-recognition.svg";
@@ -30,8 +31,10 @@ function App() {
         </div>
       </section>
       <section className="midSection mainContent">
-        {/* ShortenURL comp */}
         <ShortenUrlComp />
+        <div className="ShortLinksCon">
+          <ShortLinks />
+        </div>
 
         <div className="midSectionText">
           <p className="midSectionText__Header">Advanced Statistics</p>
