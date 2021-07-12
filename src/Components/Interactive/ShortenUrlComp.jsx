@@ -15,11 +15,10 @@ const ShortenUrlComp = () => {
       return;
     }
 
-    const searchUrl = userUrl;
-
     axios
-      .get(`https://api.shrtco.de/v2/shorten?url=${searchUrl}`)
+      .get(`https://api.shrtco.de/v2/shorten?url=${userUrl}`)
       .then((res) => {
+        console.log(res);
         setResp(res.data.result);
       })
       .then(() => {
