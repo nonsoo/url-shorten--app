@@ -139,3 +139,30 @@
   gap: 2rem;
   margin-top: 4rem;
 }
+
+@media screen and (max-width: 800px) {
+  .IntroCon,
+  .FeaturesCon {
+    flex-direction: column;
+  }
+
+  .introText {
+    order: 1;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .introText__Header,
+  .introText__Descri {
+    text-align: center;
+  }
+
+  .introText__Btn {
+    align-self: center;
+  }
+
+  .FeaturesCon {
+    gap: 4rem;
+  }
+}

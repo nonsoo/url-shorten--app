@@ -134,3 +134,24 @@
 .shortLinks__sURL {
   color: var(--col-Prmy-mod);
 }
+
+@media screen and (max-width: 800px) {
+  .ShortenForm,
+  .shortLinks,
+  .shortLinksGenCon {
+    flex-direction: column;
+  }
+
+  .ShortenForm__Input,
+  .ShortenForm__btn {
+    width: 100%;
+  }
+
+  .shortLinks {
+    gap: 1.25rem;
+  }
+
+  .FeatureImgCon {
+    align-self: center;
+  }
+}

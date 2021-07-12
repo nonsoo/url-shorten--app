@@ -1,4 +1,5 @@
 import React from "react";
+import ShortLinks from "./ShortLinks";
 
 const ShortenUrlComp = () => {
   return (
@@ -11,6 +12,9 @@ const ShortenUrlComp = () => {
         />
         <input type="button" className="ShortenForm__btn" value="Shorten it!" />
       </form>
+      <div className="ShortLinksCon">
+        <ShortLinks />
+      </div>
     </section>
   );
 };
