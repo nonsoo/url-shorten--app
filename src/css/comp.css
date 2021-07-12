@@ -108,3 +108,29 @@
   font-weight: var(--fw-sec);
   color: var(--fcol-sec);
 }
+
+.shortLinks {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  background-color: var(--background-col-sec);
+}
+
+.shortLinksGenCon {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.shortLinks__OURL,
+.shortLinks__sURL {
+  font-size: var(--fs-sec);
+}
+
+.shortLinks__sURL {
+  color: var(--col-Prmy-mod);
+}
