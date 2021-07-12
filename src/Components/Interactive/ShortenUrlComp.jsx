@@ -24,7 +24,8 @@ const ShortenUrlComp = () => {
       })
       .then(() => {
         setRespLst([...respLst, { oURL: userUrl, sURL: resp?.short_link }]);
-      });
+      })
+      .catch((err) => console.error(err));
   };
   console.log(respLst);
   return (
