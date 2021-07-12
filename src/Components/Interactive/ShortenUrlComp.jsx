@@ -6,6 +6,7 @@ import ShortLinks from "./ShortLinks";
 const ShortenUrlComp = () => {
   const [userUrl, setUserUrl] = useState("");
   const [resp, setResp] = useState();
+  const [respLst, setRespLst] = useState([]);
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -14,12 +15,18 @@ const ShortenUrlComp = () => {
       return;
     }
 
-    axios.get(`https://api.shrtco.de/v2/shorten?url=${userUrl}`).then((res) => {
-      const responseProf = res.data;
-      setResp(responseProf);
-    });
+    const searchUrl = userUrl;
+
+    axios
+      .get(`https://api.shrtco.de/v2/shorten?url=${searchUrl}`)
+      .then((res) => {
+        setResp(res.data.result);
+      })
+      .then(() => {
+        setRespLst([...respLst, { oURL: userUrl, sURL: resp?.short_link }]);
+      });
   };
-  console.log(resp);
+  console.log(respLst);
   return (
     <section className="ShortenCompCon">
       <form className="ShortenForm" onSubmit={onSubmit}>
