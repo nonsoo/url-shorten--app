@@ -12,7 +12,8 @@
   font-weight: var(--fw-tri);
 }
 
-.btn:hover {
+.btn:hover,
+.ShortenForm__btn:hover {
   background-color: var(--col-Prmy-dark);
   transition: 0.45s;
 }
@@ -38,6 +39,10 @@
 .NavLinks__Items {
   font-size: var(--fs-sec);
   cursor: pointer;
+}
+
+.NavLinks__Items:hover {
+  color: var(--fcol-sec);
 }
 
 .ShortenForm {
