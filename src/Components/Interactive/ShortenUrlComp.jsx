@@ -40,7 +40,14 @@ const ShortenUrlComp = () => {
         <input type="submit" className="ShortenForm__btn" value="Shorten it!" />
       </form>
       <div className="ShortLinksCon">
-        <ShortLinks />
+        {respLst &&
+          respLst.map((urlPair) => (
+            <ShortLinks
+              key={Math.floor(Math.random() * 10000)}
+              sURL={urlPair.sURL}
+              oURL={urlPair.oURL}
+            />
+          ))}
       </div>
     </section>
   );
