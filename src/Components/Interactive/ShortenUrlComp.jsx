@@ -26,6 +26,10 @@ const ShortenUrlComp = () => {
       })
       .catch((err) => console.error(err));
   };
+
+  const onCopyFunc = () => {
+    console.log("hello");
+  };
   console.log(respLst);
   return (
     <section className="ShortenCompCon">
@@ -46,6 +50,7 @@ const ShortenUrlComp = () => {
               key={Math.floor(Math.random() * 10000)}
               sURL={urlPair.sURL}
               oURL={urlPair.oURL}
+              onCopy={() => onCopyFunc()}
             />
           ))}
       </div>
