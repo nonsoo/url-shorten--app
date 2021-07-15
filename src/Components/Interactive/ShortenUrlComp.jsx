@@ -17,23 +17,20 @@ const ShortenUrlComp = () => {
     axios
       .get(`https://api.shrtco.de/v2/shorten?url=${userUrl}`)
       .then((res) => {
-        console.log(res);
-
         const respData = res.data.result;
 
         setRespLst([
           ...respLst,
           { oURL: respData.original_link, sURL: respData.short_link },
         ]);
+        setUserUrl("");
       })
       .catch((err) => console.error(err));
-    setUserUrl("");
   };
 
   const onCopyFunc = () => {
     console.log("hello");
   };
-  console.log(respLst);
   return (
     <section className="ShortenCompCon">
       <form className="ShortenForm" onSubmit={onSubmit}>
