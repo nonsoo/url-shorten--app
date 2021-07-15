@@ -19,7 +19,7 @@ Users are able to:
 - npm serve -s build
 
 ---
-###TODOS:
+### TODOS:
 - Copy to clipboard
 - change state of copied btn 
 
