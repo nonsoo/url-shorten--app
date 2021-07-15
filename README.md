@@ -17,3 +17,13 @@ Users are able to:
 - npm install
 - npm run build
 - npm serve -s build
+
+---
+### TODOS:
+- Copy to clipboard
+- change state of copied btn 
+
+--- 
+### Things to note
+The API takes a long time to respond 
+- would be good to add a loading animation

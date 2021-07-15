@@ -55,6 +55,7 @@
   border-radius: 10px;
 
   background-color: var(--col-Neu-Dblue);
+  transform: translateY(-70%);
 }
 
 .ShortenForm__Input {
@@ -129,6 +130,7 @@
 .shortLinks__OURL,
 .shortLinks__sURL {
   font-size: var(--fs-sec);
+  text-align: center;
 }
 
 .shortLinks__sURL {

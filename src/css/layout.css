@@ -69,9 +69,11 @@
 }
 
 .IntroCon {
+  margin: 0 auto;
   margin-top: 6rem;
   display: flex;
   align-items: center;
+  width: 90%;
 }
 
 .IntroImg {
@@ -105,10 +107,11 @@
 }
 
 .midSection {
-  width: 100;
+  width: 90%;
   background-color: var(--col-Neu-grayVio);
 
   border-radius: 10px;
+  margin-top: 10rem;
 }
 
 .midSectionText {
