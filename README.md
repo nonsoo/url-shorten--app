@@ -27,3 +27,6 @@ Users are able to:
 ### Things to note
 The API takes a long time to respond 
 - would be good to add a loading animation
+
+---
+The live demo of the web app is at available at [Shorly live demo](https://shortlyurl.netlify.app)
