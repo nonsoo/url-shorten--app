@@ -45,6 +45,7 @@ const ShortenUrlComp = () => {
       </form>
       <div className="ShortLinksCon">
         {respLst &&
+          respLst.length !== 0 &&
           respLst.map((urlPair) => (
             <ShortLinks
               key={Math.floor(Math.random() * 10000)}
