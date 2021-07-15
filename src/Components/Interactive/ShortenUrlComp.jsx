@@ -20,8 +20,8 @@ const ShortenUrlComp = () => {
         const respData = res.data.result;
 
         setRespLst([
-          ...respLst,
           { oURL: respData.original_link, sURL: respData.short_link },
+          ...respLst,
         ]);
         setUserUrl("");
       })
